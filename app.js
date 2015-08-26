@@ -8,4 +8,8 @@ app.controller("RedditClone", function($scope) {
     $scope.newPostBool = true;
   };
 
+  $scope.renderPost = function() {
+    $scope.newPostBool = false;
+  };
+
 });
