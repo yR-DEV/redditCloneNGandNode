@@ -1,7 +1,7 @@
 var app = angular.module("LetsMakeReddit", []);
 
 app.controller("RedditClone", function($scope) {
-
+  var posts = [];
   $scope.newPostBool = false;
 
   $scope.newPostForm = function() {
@@ -10,6 +10,10 @@ app.controller("RedditClone", function($scope) {
 
   $scope.renderPost = function() {
     $scope.newPostBool = false;
+    var tempArr = [];
+    tempArr.push($scope.newPost);
+    console.log(tempArr);
+
   };
 
 });

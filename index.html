@@ -58,16 +58,19 @@
         <form>
           <div class="form-group new-post">
             <label for="newPostTitle">Title: </label>
-            <input type="email" class="form-control" id="newPostTitle" placeholder="Title" ng-model="newPostTitle">
+            <input type="text" class="form-control" id="newPostTitle" name="newPostTitle" placeholder="Title" ng-model="newPost.title">
             <label for="newPostTitle">Author: </label>
-            <input type="email" class="form-control" id="newPostAuthor" placeholder="Author" ng-model="newPostAuthor">
+            <input type="text" class="form-control" id="newPostAuthor" placeholder="Author" ng-model="newPost.author">
             <label for="newPostImageURL">Image URL: </label>
-            <input type="email" class="form-control" id="newPostImageURL" placeholder="Image URL" ng-model="newPostImageURL">
+            <input type="text" class="form-control" id="newPostImageURL" placeholder="Image URL" ng-model="newPost.imageURL">
             <label for="newPostDescription">Description: </label>
-            <input type="email" class="form-control" id="newPostDescription" placeholder="Description" ng-model="newPostDescription">
+            <input type="text" class="form-control" id="newPostDescription" placeholder="Description" ng-model="newPost.description">
             <button type="submit" class="btn btn-default my-button" ng-click="renderPost()">Submit</button>
           </div>
         </form>
+    <div>
+      
+    </div>
   </div>
   </body>
 </html>
