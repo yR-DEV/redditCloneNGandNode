@@ -1,0 +1,11 @@
+var app = angular.module("LetsMakeReddit", []);
+
+app.controller("RedditClone", function($scope) {
+
+  $scope.newPostBool = false;
+
+  $scope.newPostForm = function() {
+    $scope.newPostBool = true;
+  };
+
+});
