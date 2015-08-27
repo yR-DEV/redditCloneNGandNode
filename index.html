@@ -71,7 +71,7 @@
       </div>
       <!-- <p>{{posts}}</p> -->
       <div class="postDiv" ng-repeat="post in posts">
-        <p class="postTitle">{{post.title}}  |  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true" ng-click="ratePost(true)"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true" ng-click="ratePost(false)"></span> {{votes}}</p>
+        <p class="postTitle">{{post.title}}  |  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true" ng-click="ratePostUp(post)"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true" ng-click="ratePostDown(post)"></span> {{post.votes}}</p>
         <img class="imgPost" ng-src={{post.imageURL}} />
       </div>
     </div>

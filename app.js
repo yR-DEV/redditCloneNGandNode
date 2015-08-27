@@ -8,14 +8,14 @@ app.controller("RedditClone", function($scope) {
     author: "yR",
     description: "Some reddit description post",
     imageURL: "http://i.imgur.com/YezrFSe.jpg",
-    title: "some reddit post title"},
-    // votes: 0,
+    title: "some reddit post title",
+    votes: 0},
   {
     author: "Ry",
     description: "post description reddit Some",
     imageURL: "http://i.imgur.com/mEtORc7.jpg",
     title: "title post reddit some",
-    // votes: 0,
+    votes: 0,
   }];
 
   $scope.newPostForm = function() {
@@ -30,12 +30,13 @@ app.controller("RedditClone", function($scope) {
     // console.log($scope.posts);
   };
 
-  $scope.ratePost = function(bool) {
-    if(bool === true) {
-      $scope.votes += 1;
-    } else {
-      $scope.votes -= 1;
-    }
+  $scope.ratePostUp = function(post) {
+    // console.log($scope.post);
+    post.votes += 1;
+  };
+
+  $scope.ratePostDown = function(post) {
+    post.votes -= 1;
   };
 
 });
