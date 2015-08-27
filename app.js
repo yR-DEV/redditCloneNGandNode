@@ -12,8 +12,8 @@ app.controller("RedditClone", function($scope) {
     $scope.newPostBool = false;
     var tempArr = [];
     tempArr.push($scope.newPost);
-    console.log(tempArr);
-
+    $scope.posts.push(tempArr);
+    console.log($scope.posts);
   };
 
 });
