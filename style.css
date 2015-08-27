@@ -6,3 +6,22 @@
 .my-button {
   margin-top: 8px;
 }
+
+.imgPost {
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+.postDiv {
+  width: 90%;
+  height: 175px;
+  border: 1px solid grey;
+  background-color: #C2D6D6;
+  margin-bottom: 10px;
+}
+
+.postTitle {
+  font-size: 15px;
+  font-weight: bold;
+}
