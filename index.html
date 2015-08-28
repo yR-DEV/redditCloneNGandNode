@@ -80,8 +80,8 @@
         <!-- <div ng-show="commentBool"> -->
           <form ng-submit="addComment(post)" ng-show="commentBool">
             <label for="postComment"></label>
-            <input type="text" class="form-control" id="postComment" name="postComment" placeholder="Comment here..." ng-model="newComment">
-            <input type="text"class="form-control" id="authorComment" placeholder="Your Username Here..." ng-model="newCommentAuthor">
+            <input type="text" class="form-control" id="postComment" name="postComment" placeholder="Comment here..." ng-model="newComment.comment">
+            <input type="text"class="form-control" id="authorComment" placeholder="Your Username Here..." ng-model="newComment.author">
             <input type="submit" ng-submit="addComment(post)" id="addComment">
           </form>
         <!-- </div> -->

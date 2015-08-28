@@ -48,7 +48,7 @@ app.controller("RedditClone", function($scope) {
   };
 
   $scope.addComment = function(post) {
-    console.log($scope.newCommentAuthor);
+    console.log($scope.newComment);
     post.comments.push({author: $scope.newCommentAuthor,
                         comment: $scope.newComment});
     console.log(post.comments);
