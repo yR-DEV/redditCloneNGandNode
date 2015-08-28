@@ -13,13 +13,14 @@ app.controller("RedditClone", function($scope) {
     comments: [{author: "me",
                 comment: "something"},
                ]},
-  {
-    author: "Ry",
-    description: "post description reddit Some",
-    imageURL: "http://i.imgur.com/mEtORc7.jpg",
-    title: "title post reddit some",
-    votes: 0,
-  }];
+  // {
+  //   author: "Ry",
+  //   description: "post description reddit Some",
+  //   imageURL: "http://i.imgur.com/mEtORc7.jpg",
+  //   title: "title post reddit some",
+  //   votes: 0,
+  // }
+];
 
   $scope.newPostForm = function() {
     $scope.newPostBool = true;
@@ -44,6 +45,13 @@ app.controller("RedditClone", function($scope) {
 
   $scope.showComment = function(){
     $scope.commentBool = true;
-  }
+  };
+
+  $scope.addComment = function(post) {
+    console.log($scope.newCommentAuthor);
+    post.comments.push({author: $scope.newCommentAuthor,
+                        comment: $scope.newComment});
+    console.log(post.comments);
+  };
 
 });
