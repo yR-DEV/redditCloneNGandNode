@@ -25,3 +25,13 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+.postDescription {
+  margin-left: 150px;
+  margin-bottom: 0px;
+}
+
+.addComment {
+  margin-right: 0px;
+  margin-left: 200px;
+}

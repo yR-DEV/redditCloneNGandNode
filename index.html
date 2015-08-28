@@ -73,7 +73,15 @@
       <div class="postDiv" ng-repeat="post in posts">
         <p class="postTitle">{{post.title}}  |  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true" ng-click="ratePostUp(post)"></span><span class="glyphicon glyphicon-arrow-down" aria-hidden="true" ng-click="ratePostDown(post)"></span> {{post.votes}}</p>
         <img class="imgPost" ng-src={{post.imageURL}} />
-      </div>
+        <p class="postDescription">{{post.description}}</p>
+        <div ng-click="showComment()">
+          <p class="addComment">Add Comment </p>
+        </div>
+        <div ng-show="commentBool">
+          <label for="postComment"></label>
+          <input type="text" class="form-control" id="postComment" name="postComment" placeholder="Comment here..." ng-model="newPost.title">
+        </div>
+      </dixv>
     </div>
 
   </body>

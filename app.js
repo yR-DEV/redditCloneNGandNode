@@ -9,7 +9,10 @@ app.controller("RedditClone", function($scope) {
     description: "Some reddit description post",
     imageURL: "http://i.imgur.com/YezrFSe.jpg",
     title: "some reddit post title",
-    votes: 0},
+    votes: 0,
+    comments: [{author: "me",
+                comment: "something"},
+               ]},
   {
     author: "Ry",
     description: "post description reddit Some",
@@ -38,5 +41,9 @@ app.controller("RedditClone", function($scope) {
   $scope.ratePostDown = function(post) {
     post.votes -= 1;
   };
+
+  $scope.showComment = function(){
+    $scope.commentBool = true;
+  }
 
 });
